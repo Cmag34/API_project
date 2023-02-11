@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Picture of The Day</title>
+    <style type="text/css">.body { width: auto; }</style>
+  </head>
+  <body>
+    <h1>Forms: {{districts}}</h1>
+  </body>
+</html>  -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Covid Data in Districts in India </title>
+  </head>
+  <body>
+    <h1>Select a District:</h1>
+   
+    <form action="/select_district" method="post">
+      <select name= "districts" >
+        {% for district in districts %}
+        <option value= "{{district}}" SELECTED>{{district}}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+
+  
+  </body>
+</html>
+
+
+
+    
